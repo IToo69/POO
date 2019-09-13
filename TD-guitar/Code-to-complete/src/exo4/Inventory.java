@@ -1,6 +1,15 @@
 package exo4;
 
+import java.util.LinkedList;
+import java.util.List;
+
+
 public class Inventory {
+	
+	private List<Guitar> guitars;
+	public Inventory() {
+		guitars = new LinkedList<>();
+	}
 
 	private static void initializeInventory(Inventory inventory) {
 	    inventory.addGuitar("11277", 3999.95,
@@ -37,5 +46,12 @@ public class Inventory {
 	      new GuitarSpec(Builder.PRS, "Dave Navarro Signature", Type.ELECTRIC,
 	                     6, Wood.MAHOGANY, Wood.MAPLE));
 	}
+
+	private void addGuitar(String string, double price, GuitarSpec guitarSpec) {
+		
+	}
+
+	
+
 	
 }
